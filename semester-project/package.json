@@ -1,0 +1,44 @@
+{
+  "name": "marketing-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.0",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/react-datepicker": "^4.19.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "contentful": "^10.6.21",
+    "fontawesome": "^5.6.3",
+    "highlight.js": "^11.9.0",
+    "mongodb": "^6.3.0",
+    "mongose": "^0.0.2-security",
+    "next": "13.5.5",
+    "react": "^18",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "^20.11.2",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.5",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5.3.3"
+  }
+}
