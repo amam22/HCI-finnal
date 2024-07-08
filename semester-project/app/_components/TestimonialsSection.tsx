@@ -34,7 +34,7 @@ const testimonials: TestimonialCardProps[] = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="flex flex-col lg:flex-row overflow-x-auto p-4 gap-40">
+  <section className="flex flex-wrap flex-row justify-center overflow-x-auto p-4 gap-20">
     {testimonials.map((testimonial, index) => (
       <TestimonialCard key={index} {...testimonial} />
     ))}

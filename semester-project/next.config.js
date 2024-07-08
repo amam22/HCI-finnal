@@ -9,6 +9,8 @@ const nextConfig = {
       "unsplash.com",
       "source.unsplash.com",
       "images.ctfassets.net",
+      "upload.wikimedia.org",
+      "wallpapercave.com"
     ],
   },
 };

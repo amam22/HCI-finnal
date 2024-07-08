@@ -26,7 +26,7 @@ const Button = ({
   );
 
   const colorStyles = {
-    backgroundColor: "rgba(0, 123, 255, 0.8)", // Light blue color
+    backgroundColor: "#09396d", // Light blue color
     hoverBackgroundColor: "rgba(0, 123, 255, 1)", // Darker blue for hover
     textColor: "#FFFFFF", // White text
     hoverTextColor: "#FFFFFF", // White text on hover

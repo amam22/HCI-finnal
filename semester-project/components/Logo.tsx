@@ -1,7 +1,7 @@
 import { cn } from "./lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import './Logo.css';  
+import './Logo.css';
 
 type IconSize = {
   width?: number;
@@ -19,12 +19,7 @@ const Logo = ({ dark = false }) => (
     <div className="flex items-center gap-2 cursor-pointer">
       <LogoIcon />
       <span
-        className={cn(
-          "logo-text", 
-          {
-            "dark-text": dark,
-          }
-        )}
+        className="text-lg md:text-xl text-[#09396d] font-semibold"
       >
         CityScape Station
       </span>

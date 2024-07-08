@@ -5,7 +5,7 @@ import Link from "next/link";
 import Logo from "@/components/Logo";
 import MobileNav from "./MobileNav";
 import MobileNavHelp from "./MobileNavHelp";
-import './NavBar.css'; 
+import './NavBar.css';
 
 export type Page = {
   href: string;
@@ -16,7 +16,7 @@ export type Page = {
 const pages: Page[] = [
   { href: "/", title: "Home" },
   { href: "/usluge", title: "Usluge" },
-  { href: "/pages", title: "Recenzije i osvrti" },
+  { href: "/recenzije", title: "Recenzije i osvrti" },
   { href: "/about", title: "O nama" },
 ];
 
@@ -30,7 +30,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="container flex items-center justify-between ">
+    <section className="flex items-center justify-between p-4 m-2">
       <Logo />
       <CustomMainNav
         pages={pages}
@@ -39,7 +39,7 @@ const NavBar = () => {
       />
       <MobileNavHelp open={open} clickHandler={setOpen} />
       <MobileNav open={open} clickHandler={setOpen} pages={pages} />
-    </div>
+    </section>
   );
 };
 
@@ -53,13 +53,11 @@ const CustomMainNav = ({
   handlePageClick: (href: string) => void;
 }) => {
   return (
-    <nav className="hidden md:flex space-x-4">
+    <nav className="hidden lg:flex text-[18px]">
       {pages.map((page, index) => (
         <Link key={index} href={page.href}>
           <span
-            className={`nav-link ${
-              page.href === activePage ? "active" : ""
-            }`}
+            className={`nav-link mx-4 p-2 ${activePage === page.href ? 'active' : ''}`}
             onClick={() => handlePageClick(page.href)}
           >
             {page.title}

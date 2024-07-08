@@ -36,10 +36,10 @@ const FooterList = ({ title, items }: ListProps) => {
 };
 
 const Footer = () => (
-  <div className="footer-container">
-    <div className="footer-inner-container">
-      <div className="footer-columns">
-        
+  <div className="bg-white">
+    <div className="">
+      <div className="flex flex-row justify-between py-4 mx-32 flex-wrap">
+
         <FooterList
           title="Usluge"
           items={[
@@ -52,7 +52,7 @@ const Footer = () => (
           title="CityScape station"
           items={[
             { label: "O nama", href: "/" },
-            { label: "Recenzije i osvrti", href: "/" },
+            { label: "Recenzije i osvrti", href: "/recenzije" },
             { label: "Usluge", href: "/usluge" },
           ]}
         />

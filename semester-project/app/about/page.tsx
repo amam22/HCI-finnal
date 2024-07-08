@@ -52,7 +52,7 @@ const Onama: NextPage = () => {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-10">
       <div className="mb-8 text-center">
-        <p className="text-4xl font-bold text-yellow mb-2">Welcome to CityScape community!</p>
+        <p className="text-4xl font-regular text-[#09396d] mb-8">Welcome to CityScape community!</p>
         <div className="flex items-center justify-center">
           <FontAwesomeIcon icon={faSearch} className="text-gray-600 mr-2" />
           <input

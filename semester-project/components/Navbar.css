@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-.container {
-  padding: 1rem; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
 
 .nav-link {
   display: inline-block;
@@ -11,6 +8,8 @@
   color: #4a5568;  
   transition: color 0.3s;
   background-color: #f7fafc; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem; /* Povećana veličina fonta */
 }
 
 .nav-link:hover {
@@ -20,4 +19,11 @@
 .nav-link.active {
   font-weight: bold;
   background-color: #e2e8f0; 
+}
+
+.page-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 4rem; 
+  color: #09396d; 
+  font-weight: bold;
 }

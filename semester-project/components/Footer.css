@@ -1,6 +1,6 @@
-/* Footer.css */
+Footer.css
 .footer-container {
-  background-color: #f7fafc;
+  background-color: #015288;
   padding: 50px 0;
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -31,7 +31,7 @@
 }
 
 .footer-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   color: #044b96;
   margin-bottom: 10px;

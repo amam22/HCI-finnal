@@ -48,6 +48,7 @@ export default function RootLayout({
         roboto_condensed.variable,
         playfairDisplay.variable
       )}
+      style={{ overflowX: 'hidden' }}
     >
       <body className={inter.className}>
         <NavBar />

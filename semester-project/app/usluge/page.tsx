@@ -43,7 +43,7 @@ const Usluge: NextPage = () => {
 
   const handleFilter = (type: string) => {
     let filtered: any[] = [];
-  
+
     if (filterType === type) {
       setFilterType('');
       setFilteredData(data);
@@ -57,22 +57,21 @@ const Usluge: NextPage = () => {
       setFilteredData(filtered);
     }
   };
-  
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-10">
       <div className="mb-4">
-        <button onClick={() => handleFilter('znamenitosti')} className={`mr-2 border border-gray-700 rounded-md p-2 ${filterType === 'znamenitosti' ? 'bg-gray-700 text-white' : ''}`}>Znamenitosti</button>
-        <button onClick={() => handleFilter('aktivnosti')} className={`border border-gray-700 rounded-md p-2 ${filterType === 'aktivnosti' ? 'bg-gray-700 text-white' : ''}`}>Aktivnosti</button>
+        <button onClick={() => handleFilter('znamenitosti')} className={`mr-2 border border-[#09396d] rounded-md p-2 ${filterType === 'znamenitosti' ? 'bg-[#09396d] text-white' : ''}`}>Znamenitosti</button>
+        <button onClick={() => handleFilter('aktivnosti')} className={`border border-[#09396d] rounded-md p-2 ${filterType === 'aktivnosti' ? 'bg-[#09396d] text-white' : ''}`}>Aktivnosti</button>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {filteredData.map((item, index) => (
-          <div key={index} className="p-4 bg-gray-200 rounded-md relative">
-            <p className="text-gray-700 font-bold uppercase text-2xl mb-2">{item.fields.name}</p>
+          <div key={index} className="p-4 bg-blue-100 rounded-md relative h-[450px]">
+            <p className="text-[#09396d] font-bold uppercase text-2xl mb-2" style={{ fontFamily: 'Times New Roman' }}>{item.fields.name}</p>
             <img src={item.fields.img} alt={item.fields.name} className="w-full h-40 object-cover mb-2" />
-            <p className="text-black text-sm">{item.fields.body}</p>
-            <Link href={`/details/${index}`}>
-              <div className="absolute bottom-2 right-2 text-gray-700 uppercase font-bold cursor-pointer">Pročitaj više</div>
+            <p className="text-[#09396d] text-base">{item.fields.body}</p>
+            <Link href={`/posts/${index}`}>
+              <div className="absolute bottom-2 right-2 text-[#09396d] uppercase font-normal cursor-pointer text-sm">Pročitaj više</div>
             </Link>
           </div>
         ))}
@@ -82,4 +81,3 @@ const Usluge: NextPage = () => {
 };
 
 export default Usluge;
-
